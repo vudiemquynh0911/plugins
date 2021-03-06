@@ -1324,6 +1324,7 @@ switch (routeChangeReason) {
   _registry = registry;
   _messenger = messenger;
   [self initDeviceEventMethodChannel];
+ // [self startOrientationListener];
   return self;
 }
 
