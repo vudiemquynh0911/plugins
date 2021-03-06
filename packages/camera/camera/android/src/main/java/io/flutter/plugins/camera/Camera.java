@@ -632,7 +632,7 @@ public class Camera {
   }
 
   public void startVideoRecording(Result result) {
-    Log.i("Camera", "start recordingggg");
+    Log.i("Camera", "start recording");
     final File outputDir = applicationContext.getCacheDir();
     try {
       videoRecordingFile = File.createTempFile("REC", ".mp4", outputDir);
@@ -673,8 +673,8 @@ public class Camera {
       mediaRecorder.reset();
 //      startPreview();
       String manufacturer = android.os.Build.MANUFACTURER;
-      if (!manufacturer.equals("samsung")) {
-        Log.i("Camera" , "Test samsung");
+      if (manufacturer.equals("samsung")) {
+        Log.i("Camera" , "Samsung Device");
         parseVideo(videoRecordingFile.getAbsolutePath(), result);
       } else {
         result.success(videoRecordingFile.getAbsolutePath());
