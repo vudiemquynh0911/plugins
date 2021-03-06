@@ -171,7 +171,7 @@ public class Camera {
 
     deviceOrientationListener =
         new DeviceOrientationManager(activity, dartMessenger, isFrontFacing, sensorOrientation);
-    deviceOrientationListener.start();
+//    deviceOrientationListener.start();
   }
 
   private void initFps(CameraCharacteristics cameraCharacteristics) {

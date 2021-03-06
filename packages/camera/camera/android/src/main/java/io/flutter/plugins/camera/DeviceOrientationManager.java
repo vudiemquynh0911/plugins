@@ -76,7 +76,7 @@ class DeviceOrientationManager {
         angle = 270;
         break;
     }
-//    if (isFrontFacing) angle *= -1;
+    if (isFrontFacing) angle *= -1;
     return (angle + sensorOrientation + 360) % 360;
   }
 
