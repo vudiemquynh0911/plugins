@@ -1293,7 +1293,9 @@ switch (routeChangeReason) {
       return 0;
     case UIDeviceOrientationPortrait:
     default:
-      return 90;
+      // landscape video review when record portrait
+      //return 90;
+      return 0;
   };
 }
 
