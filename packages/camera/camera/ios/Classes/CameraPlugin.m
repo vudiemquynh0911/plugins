@@ -212,18 +212,19 @@ static UIDeviceOrientation getUIDeviceOrientationForString(NSString *orientation
 }
 
 static NSString *getStringForUIDeviceOrientation(UIDeviceOrientation orientation) {
-  switch (orientation) {
-    case UIDeviceOrientationPortraitUpsideDown:
-      return @"portraitDown";
-    case UIDeviceOrientationLandscapeRight:
-      return @"landscapeLeft";
-    case UIDeviceOrientationLandscapeLeft:
-      return @"landscapeRight";
-    case UIDeviceOrientationPortrait:
-    default:
-      return @"portraitUp";
-      break;
-  };
+    return @"landscapeRight";
+//  switch (orientation) {
+//    case UIDeviceOrientationPortraitUpsideDown:
+//      return @"portraitDown";
+//    case UIDeviceOrientationLandscapeRight:
+//      return @"landscapeLeft";
+//    case UIDeviceOrientationLandscapeLeft:
+//      return @"landscapeRight";
+//    case UIDeviceOrientationPortrait:
+//    default:
+//      return @"portraitUp";
+//      break;
+//  };
 }
 
 // Mirrors FocusMode in camera.dart
