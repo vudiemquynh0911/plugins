@@ -437,7 +437,7 @@ NSString *const errorMethod = @"error";
   [_motionManager startAccelerometerUpdates];
 
   [self setCaptureSessionPreset:_resolutionPreset];
-  [self updateOrientation];
+  //[self updateOrientation];
 
   return self;
 }
